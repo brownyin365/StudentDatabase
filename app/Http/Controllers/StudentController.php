@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Student;
 
 class StudentController extends Controller
 {
     //
-    public function getAllUsers()
+    public function getAllStudents()
     {
        
-      $users = User::all(); 
+      $students = Student::all(); 
 
-       return view("student", compact("users"));
+       return view("student", compact("students"));
     }
 }
