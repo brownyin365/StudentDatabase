@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title', 'about')
 @section('content')
 
 <div>
@@ -11,15 +10,15 @@
   <table class="table table-striped">
     		<thead>
     			<th>Name</th>
-                <th>Email</th>
+                <th></th>
                 <th>Class</th>
                 <th>Index Number</th>
             </thead>
     <tbody>
-    	     @foreach($users as $user)
+    	     @foreach($students as $student)
         <tr>
 	        <td>{{$user ->name}}</td>
-            <td>{{$user ->email}}</td>
+            <td></td>
             <td>{{$user ->class}}</td>
             <td>{{$user ->number}}</td>
 	    </tr>
